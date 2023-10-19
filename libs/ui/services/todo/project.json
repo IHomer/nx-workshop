@@ -6,15 +6,15 @@
   "prefix": "nx-workshop",
   "targets": {
     "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/ui/services/todo"],
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ui/services/todo"],
       "options": {
         "jestConfig": "libs/ui/services/todo/jest.config.ts",
         "passWithNoTests": true
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "lintFilePatterns": [
           "libs/ui/services/todo/**/*.ts",

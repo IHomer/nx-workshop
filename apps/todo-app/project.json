@@ -74,14 +74,14 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "lintFilePatterns": ["apps/todo-app/**/*.ts", "apps/todo-app/**/*.html"]
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/todo-app"],
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/apps/todo-app"],
       "options": {
         "jestConfig": "apps/todo-app/jest.config.ts",
         "passWithNoTests": true
