@@ -6,7 +6,7 @@
   "prefix": "nx-workshop",
   "targets": {
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["coverage/libs/ui/todo"],
       "options": {
         "jestConfig": "libs/ui/todo/jest.config.ts",
@@ -14,7 +14,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "lintFilePatterns": ["libs/ui/todo/**/*.ts", "libs/ui/todo/**/*.html"]
       }
